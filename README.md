@@ -6,11 +6,13 @@
 * 实际使用中raspberry pi zero供电可能不够，请使用raspberry pi 3b+（接口对应不变）  
   In fact ,raspberry pi zero may not have enough power, please use raspberry pi 3b+.(Interface corresponding is same as pi zero)
 
-* 如图，从右向左数为1-8号pwm排针一一对应，只有+5V与GND之间有电容的才可以使用  
-  As the figure,from right to left is pwm pins 1-8,can only use the servo which have capacitance among VCC and GND.
+* 如下图，从右向左数为1-8号pwm排针一一对应，只有+5V与GND之间有电容的才可以使用  
+  As the follow figure,from right to left is pwm pins 1-8,can only use the servo which have capacitance among VCC and GND.
+  
+  ![image](image/2.png?tree=true " 2 ")
 
-* 如图，束线中的棕色线为GND，红色线为+5V，黄线为pwm信号。线上蓝色贴纸的编号表达了该线与每根手指舵机的对应关系，1连接大拇指，2连接食指，3连接中指，无名指与小指共用一个电机即4 5。无标号的线中，下方的     线连接控制手腕转动的舵机，上方的线连接手掌中央使大拇指水平转动的舵机。` 该编号与程序中电机编号无关。`   
-  As figure, the brown line is GND, the red line is + 5V, and the yellow line is the pwm signal. The number of the blue sticker on the line expresses the correspondence between the line and each finger steering         gear. 1 connects the thumb,     2 connects the index finger, 3 connects the middle finger, the ring finger and the little finger share one steering gear (4 5). For the line do not have number, The lower line       connects the steering gear that controls the wrist     rotation, and the upper line connects the steering gear      in the palm of the hand which make the thumb rotate horizontally. ` This number is independent of the number in the code.`
+* 如下图，束线中的棕色线为GND，红色线为+5V，黄线为pwm信号。线上蓝色贴纸的编号表达了该线与每根手指舵机的对应关系，1连接大拇指，2连接食指，3连接中指，无名指与小指共用一个电机即4 5。无标号的线中，下方的     线连接控制手腕转动的舵机，上方的线连接手掌中央使大拇指水平转动的舵机。` 该编号与程序中电机编号无关。`   
+  As follow figure, the brown line is GND, the red line is + 5V, and the yellow line is the pwm signal. The number of the blue sticker on the line expresses the correspondence between the line and each finger steering         gear. 1 connects the thumb,     2 connects the index finger, 3 connects the middle finger, the ring finger and the little finger share one steering gear (4 5). For the line do not have number, The lower line       connects the steering gear that controls the wrist     rotation, and the upper line connects the steering gear      in the palm of the hand which make the thumb rotate horizontally. ` This number is independent of the number in the code.`
 
   ![image](image/1.png?tree=true " 1 ")
 
@@ -52,7 +54,14 @@ Run test.py to see if the robot's action matches the value.
 各个json文件对应其名字所指向的功能，如phone.json是让机械手做出抓住手机的动作。当然，你可以随时修改数值让它做出不一样的动作，`注意 ，请勿用test.py运行rock_paper_scissors.json程序`  
 Each json file corresponds to the function just as its name, such as phone.json is to let the robot make the action of grabbing the phone. Of course, you can change the value at any time to make it perform different actions,` Attention, don't run rock_paper_scissors.json program with test.py`
   
-## 关于猜拳游戏，这个游戏目前仍未被完成 This game is still not completed yet.
+## Part for update
+关于猜拳游戏，这个游戏目前仍未被完成 This game is still not completed yet.
 * 目录~/catkin_ws/src/robot_hand/src下的文件中，finger.py是在使用raspberry pi 3b+ 时使用的类程序，它仍有一些问题，而finger1.py则是之前使用raspberry pi zero及多线程时使用的类程序，请勿弄混。更多的信息详见finger.py及matlab中compare_result.m的程序注释。
 * roslaunch程序在目录~/catkin_ws/src/robot_hand/launch下。
-* In the file under the directory ~/catkin_ws/src/robot_hand/src, finger.py is a class python file used when using raspberry pi 3b+, it   still has some problems, and finger1.py is the file was used when we using raspberry pi zero and multi-threading. Do not confuse the     class file. More information can be found in the program comments for finger.py and compare_result.m in matlab. The roslaunch program   is in the directory ~/catkin_ws/src/robot_hand/launch.
+* 目前的进度是：在使用raspberry pi 3b+及更改后的rpiHAT servo时运行roslaunch会宕机，matlab与ros的连接正常。之前使用raspberry pi zero及原本的       rpiHAT时roslaunch 运行正常，matlab部分中，发布随机数给ros使机械手做出动作的部分已经可以使用，仅发布最终结果的部分有问题，但只应作为参考，不应继     续使用 pi zero
+
+
+* In the file under the directory ~/catkin_ws/src/robot_hand/src, finger.py is a class python file used when using raspberry pi 3b+, it   still has some problems, and finger1.py is the file was used when we using raspberry pi zero and multi-threading. Do not confuse the     class file. More information can be found in the program comments for finger.py and compare_result.m in matlab. 
+* The roslaunch program is in the directory ~/catkin_ws/src/robot_hand/launch.
+* Current progress: When using raspberry pi 3b+ and changed rpiHAT servo, running roslaunch will crash, matlab and ros connection is ok.   When using raspberry pi zero and the original rpiHAT, roslaunch is running well . In the matlab part, the part that send the random     number to ros to make the robot do the action is already available. Only the part that publishes the final result is problematic, but   it should only be used as a reference. we should not continue to use pi zero
+
