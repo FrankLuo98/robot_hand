@@ -1,1 +1,1 @@
-# this servo is different from the servo in original rpiHAT
+# this servo is different from the servo.py in original rpiHAT
