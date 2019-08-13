@@ -1,0 +1,29 @@
+{"poses":
+[
+
+{"position": {"x": 2, "y": 0.01, "z": 0.05}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}, # this is line 0
+{"position": {"x": 4, "y": 0.01, "z": 0.06}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}, # this is line 1
+{"position": {"x": 6, "y": 0.01, "z": 0.23}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 8, "y": 0.01, "z": 0.23}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+
+{"position": {"x": 3, "y": 0.01, "z": 0.185}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}, # this is line 4
+{"position": {"x": 1, "y": 0.02, "z": 0.17}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+
+{"position": {"x": 2, "y": 0.01, "z": 0.21}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}, #now you should konw this is line 6,and so on
+{"position": {"x": 4, "y": 0.01, "z": 0.21}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 6, "y": 0.01, "z": 0.06}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 8, "y": 0.01, "z": 0.06}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+
+{"position": {"x": 3, "y": 0.01, "z": 0.05}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 1, "y": 0.02, "z": 0.20}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+
+{"position": {"x": 2, "y": 0.01, "z": 0.17}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 4, "y": 0.01, "z": 0.21}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 6, "y": 0.01, "z": 0.07}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 8, "y": 0.01, "z": 0.23}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+
+{"position": {"x": 3, "y": 0.01, "z": 0.20}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}},
+{"position": {"x": 1, "y": 0.02, "z": 0.20}, "orientation": {"x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0}}
+
+]
+}
