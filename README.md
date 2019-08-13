@@ -2,6 +2,8 @@
 ## 机械部分 Mechanical part
 * 控制部分由两块板组成，rpiHAT板和rasberry pi。将raspberry pi 连接到rpiHAT板上的接口对应请参考该图  
   There are two single board computers; rpiHAT and Raspberry Pi. Refer to the figure for the interface connecting the raspberry pi to     the rpiHAT board.
+  
+  ![image](image/3.png?tree=true " 3 ") ![image](image/4.png?tree=true " 4 ")
 
 * 实际使用中raspberry pi zero供电可能不够，请使用raspberry pi 3b+（接口对应不变）  
   In fact ,raspberry pi zero may not have enough power, please use raspberry pi 3b+.(Interface corresponding is same as pi zero)
